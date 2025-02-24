@@ -132,6 +132,7 @@ def test_trade_failure_no_id(imx_client):
             imx_client.trade(12345)
 
 
+@pytest.mark.integration
 def test_stark_key_generation():
     '''Integration test: Verify Stark key generation with real testnet API.'''
     client = IMXClient(
