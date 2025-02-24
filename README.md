@@ -1,8 +1,10 @@
 # py-immutablex
 
+![Donate](https://img.shields.io/badge/Donate-IMX/ETH-green) `0xF610975E70674b7b6429da6266a1a5d8C1C99238`
+
 A Python library for interacting with the [Immutable X](https://www.immutable.com/) API. This library provides tools to derive Stark keys from Ethereum keys, register users, perform transfers, and more—aiming to eventually cover all Immutable X API resources.
 
-[![PyPI version](https://badge.fury.io/py/py-immutablex.svg)](https://badge.fury.io/py/py-immutablex) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Tests](https://github.com/yourusername/py-immutablex/actions/workflows/tests.yml/badge.svg)
+[![PyPI version](https://badge.fury.io/py/py-immutablex.svg)](https://badge.fury.io/py/py-immutablex) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Tests](https://github.com/luizrrodrigues/py-immutablex/actions/workflows/tests.yml/badge.svg)
 
 ## Features
 - Derive Stark keys from Ethereum private keys for Immutable X.
@@ -26,15 +28,15 @@ Here’s how to initialize the client and perform a transfer:
 from py_immutablex import IMXClient
 
 # Initialize with your Ethereum private key
-client = IMXClient("0xYourEthereumPrivateKeyHere")
+client = IMXClient('0xYourEthereumPrivateKeyHere')
 
 # Transfer 1 ETH (in wei) to another address
 transfer_id = client.transfer(
-    transfer_to="0xRecipientAddress",
-    token="ETH",
-    amount="1000000000000000000"  # 1 ETH in wei
+    transfer_to='0xRecipientAddress',
+    token='ETH',
+    amount='1000000000000000000'  # 1 ETH in wei
 )
-print(f"Transfer ID: {transfer_id}")
+print(f'Transfer ID: {transfer_id}')
 ```
 
 ## Prerequisites
@@ -77,4 +79,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 -----
 
-Questions? Bugs? Open an issue or reach out: @luizrrodrigues.
+Questions? Bugs? Open an issue or reach out: [@luizrrodrigues](https://github.com/luizrrodrigues).
