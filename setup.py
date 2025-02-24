@@ -18,7 +18,7 @@ setup(
         "cairo-lang==0.13.3",
     ],
     extras_require={
-        "test": ['pytest==8.3.4', 'requests-mock-1.12.1']
+        "test": ['pytest==8.3.4', 'requests-mock==1.12.1']
     },
     python_requires=">=3.7",
     classifiers=[
